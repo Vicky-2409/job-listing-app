@@ -9,8 +9,10 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+     "outDir": "dist"
   },
+  "include": ["src/**/*"],
   "ts-node": {
     "esm": true
   }

@@ -31,6 +31,9 @@ app.get('/', (req, res) => {
   res.send('Job Listing API is running');
 });
 
+app.get('/api/health', (req, res) =>{ res.send('OK')});
+
+
 // Global Error Handling Middleware
 app.use((err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
   console.error(err.stack);
