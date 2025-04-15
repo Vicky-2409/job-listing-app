@@ -1,0 +1,31 @@
+{
+  "name": "job-listing-backend",
+  "version": "1.0.0",
+  "description": "Backend for Job Listing Web Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/app.ts",
+    "dev": "nodemon src/app.ts",
+    "seed": "npx ts-node src/utils/seedData.ts"
+  },
+  "dependencies": {
+    "@types/morgan": "^1.9.9",
+    "dotenv": "^16.3.1",
+    "express": "^4.21.2",
+    "express-validator": "^7.0.1",
+    "mongoose": "^7.5.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.1",
+    "cors": "^2.8.5",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
