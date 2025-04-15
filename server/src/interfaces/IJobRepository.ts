@@ -1,6 +1,6 @@
-import { IJob } from "../models/Job";
+import { IJob } from "../models/Job.js";
 
-import { FilteredJobsResult } from "../types/type";
+import { FilteredJobsResult } from "../types/type.js";
 
 export interface IJobRepository {
   getFilteredJobs(page: number, pageSize: number, sort: string, filters: any): Promise<FilteredJobsResult>;

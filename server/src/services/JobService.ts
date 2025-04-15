@@ -1,7 +1,7 @@
-import { IJobService } from "../interfaces/IJobService";
-import { IJobRepository } from "../interfaces/IJobRepository";
-import { IJob } from "../models/Job";
-import { FilteredJobsResult } from "../types/type";
+import { IJobService } from "../interfaces/IJobService.js";
+import { IJobRepository } from "../interfaces/IJobRepository.js";
+import { IJob } from "../models/Job.js";
+import { FilteredJobsResult } from "../types/type.js";
 
 class JobService implements IJobService {
   private jobRepository: IJobRepository;

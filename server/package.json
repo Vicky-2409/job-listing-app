@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "Backend for Job Listing Web Application",
   "main": "server.js",
-  "scripts": {
-    "start": "npm run seed && node src/app.ts",
-    "dev": "nodemon src/app.ts",
-    "seed": "npx ts-node src/utils/seedData.ts"
-  },
+  "type": "module",
+"scripts": {
+  "build": "tsc",
+  "start": "npm run seed && node --loader ts-node/esm src/app.ts",
+  "dev": "nodemon --exec ts-node --esm src/app.ts",
+  "seed": "node --loader ts-node/esm src/utils/seedData.ts"
+}
+,
   "dependencies": {
     "@types/morgan": "^1.9.9",
     "dotenv": "^16.3.1",

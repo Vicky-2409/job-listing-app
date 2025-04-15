@@ -1,7 +1,7 @@
 import { log } from "console";
-import { IJobRepository } from "../interfaces/IJobRepository";
-import Job, { IJob } from "../models/Job";
-import { FilteredJobsResult } from "../types/type";
+import { IJobRepository } from "../interfaces/IJobRepository.js";
+import Job, { IJob } from "../models/Job.js";
+import { FilteredJobsResult } from "../types/type.js";
 
 class JobRepository implements IJobRepository {
   async getAllJobs(): Promise<IJob[]> {

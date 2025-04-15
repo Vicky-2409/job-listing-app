@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
-import Job from "../models/Job";
-import sampleJobsRaw from "../../jobData.json"; // This will work if "resolveJsonModule": true in tsconfig.json
-import connectDB from "../config/db";
+import Job from "../models/Job.js";
+import sampleJobsRaw from "../../jobData.json" with { type: "json" };
+// This will work if "resolveJsonModule": true in tsconfig.json
+import connectDB from "../config/db.js";
 
 // Define what kind of raw data is in the JSON file
 type RawJob = {

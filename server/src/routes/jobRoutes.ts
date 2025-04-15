@@ -1,5 +1,5 @@
 import express from "express";
-import { jobController } from "../dependencyInjection";  // Importing the controller correctly
+import { jobController } from "../dependencyInjection.js";  // Importing the controller correctly
 
 const router = express.Router();
 

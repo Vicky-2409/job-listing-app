@@ -1,4 +1,4 @@
-import { IJob } from "../models/Job";
+import { IJob } from "../models/Job.js";
 
 export interface FilteredJobsResult {
   jobs: IJob[];

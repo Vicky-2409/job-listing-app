@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-import { IJobController } from "../interfaces/IJobController";
-import { IJobService } from "../interfaces/IJobService";
-import { HttpStatusCodes } from "../constants/HttpStatusCodes";
-import { Messages } from "../constants/Messages";
+import { IJobController } from "../interfaces/IJobController.js";
+import { IJobService } from "../interfaces/IJobService.js";
+import { HttpStatusCodes } from "../constants/HttpStatusCodes.js";
+import { Messages } from "../constants/Messages.js";
 
 class JobController implements IJobController {
   private jobService: IJobService;
