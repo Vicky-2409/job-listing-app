@@ -1,5 +1,6 @@
 import React from 'react';
 import { Job } from '../types/job';
+import Image from 'next/image';
 
 interface JobCardProps {
   job: Job;
@@ -27,9 +28,10 @@ export default function JobCard({ job, isSelected, onSelect }: JobCardProps) {
       <div className="flex justify-between items-start">
         <h3 className="font-medium text-gray-900">{job.title}</h3>
         {job.companyImageUrl && (
-          <img 
+          <Image
             src={job.companyImageUrl} 
             alt={job.company}
+            width={100} height={100}
             className="w-8 h-8 rounded-full object-cover"
           />
         )}
