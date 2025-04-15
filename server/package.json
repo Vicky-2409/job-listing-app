@@ -6,7 +6,7 @@
   "type": "module",
 "scripts": {
   "build": "tsc",
-  "start": "npm run seed && node --loader ts-node/esm src/app.ts",
+  "start": "node --loader ts-node/esm src/app.ts",
   "dev": "nodemon --exec ts-node --esm src/app.ts",
   "seed": "node --loader ts-node/esm src/utils/seedData.ts"
 }
