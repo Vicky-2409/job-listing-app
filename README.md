@@ -8,8 +8,8 @@ A full-stack web application for browsing and managing job listings. Built with:
 
 ## 🚀 Live Demo
 
-- **Frontend**: [https://job-listing-app-client.vercel.app](https://job-listing-app-client.vercel.app)
-- **Backend**: [https://job-listing-app-backend.up.railway.app](https://job-listing-app-backend.up.railway.app)
+- **Frontend**: [https://job-listing-newapp.vercel.app/](https://job-listing-newapp.vercel.app/)
+- **Backend**: [https://job-listing-app-production.up.railway.app/](https://job-listing-app-production.up.railway.app/)
 
 ---
 
